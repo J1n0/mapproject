@@ -1,0 +1,11 @@
+streamlit
+folium
+streamlit-folium
+pandas
+requests
+networkx
+osmnx
+openpyxl
+polyline
+scikit-learn
+python-dotenv
