@@ -8,7 +8,6 @@ import osmnx as ox
 import networkx as nx
 import polyline
 import os
-from dotenv import load_dotenv
 from streamlit_folium import st_folium
 from math import radians, sin, cos, sqrt, atan2
 from folium import Popup
