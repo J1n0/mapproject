@@ -15,6 +15,7 @@ from requests.adapters import HTTPAdapter
 from urllib3.util.ssl_ import create_urllib3_context
 
 
+GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
 # TLS 수정: 낮은 보안 설정 강제 적용
 class TLSAdapter(HTTPAdapter):
     def init_poolmanager(self, *args, **kwargs):
@@ -31,7 +32,6 @@ session.mount("https://", TLSAdapter())
 st.set_page_config(page_title="네비게이션", layout="wide")
 st.title("베리어프리 내비게이션 앱")
 
-GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
 
 # 주소 → 위도/경도 변환 함수
 @st.cache_data
